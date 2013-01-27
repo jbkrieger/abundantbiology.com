@@ -1,6 +1,7 @@
 @import "compass/reset"
 @import "compass/utilities"
 @import "compass/css3"
+@import "blueprint/grid"
 
 +global-reset
 
@@ -12,3 +13,44 @@ body
   font-family: Helvetica, Arial, sans-serif
   margin: 0
   padding: 0
+  background: #1E4A16 image_url("noise.png")
+
+h3
+  font-size: 1.8em
+  font-weight: bold
+
+p
+  margin-top: 1em
+  margin-bottom: 1em
+  font-size: 1.2em
+
+.center
+  margin: 30px auto 30px auto
+  width: 780px
+  +box-shadow(0px 0px 14px #000)
+  padding: 20px
+  background: white
+  //border-radius: 2px
+  +clearfix
+
+.header
+  text-align: right
+
+.left
+  width: 55%
+  display: inline
+  float: left
+
+.right
+  width: 45%
+  display: inline
+  float: right
+
+.fgpp_logo
+  margin-left: 96px
+
+.spacer
+  padding-top: 45px
+
+.bold
+  font-weight: bold
